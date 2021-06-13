@@ -4,10 +4,10 @@ def run():
 
     super_list = [
         {"firstname":"Daynor", "lastname":"Bautista"},
-        {"firstname":"Pame", "lastname":"Bsta"},
-        {"firstname":"Ana", "lastname":"Bauti"},
-        {"firstname":"Rosa", "lastname":"Bauti"},
-        {"firstname":"Gri", "lastname":"Bautist"},
+        {"firstname":"Pame", "lastname":"Perez"},
+        {"firstname":"Joel", "lastname":"Conde"},
+        {"firstname":"Rosa", "lastname":"Choque"},
+        {"firstname":"Mauricio", "lastname":"Bautista"},
     ]
 
     super_dict ={
@@ -16,8 +16,17 @@ def run():
         "floating_nums":[1.1,4.5,6.4]
     }
 
+    print("-Dict-")
+
     for key, value in super_dict.items():
         print(key, "-",value)
+    
+    print("-List-")
+
+    for values in super_list:
+        for key, value in values.items():
+            print(value, end=" ")
+        print("", sep="\n")
 
 if __name__ == "__main__":
     run()
